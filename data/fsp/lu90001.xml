@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="lexUnit.xsl"?>
+<lexUnit xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" frame="Vote" frameID="9000" status="Finished_Initial" POS="N" name="deciding vote.n" ID="90001" totalAnnotated="0" xsi:schemaLocation="../schema/lexUnit.xsd">
+    <header>
+        <corpus description="IDIR-Factchecks" name="IDIR-Factchecks" ID="500">
+            <document description="IDIR1" name="IDIR1" ID="1"/>
+        </corpus>
+        <frame>
+            <FE fgColor="FFFFFF" bgColor="FF0000" type="Core" abbrev="age" name="Agent"/>
+            <FE fgColor="FFFFFF" bgColor="008000" type="Core" abbrev="iss" name="Issue"/>
+            <FE fgColor="FFFFFF" bgColor="0000FF" type="Peripheral" abbrev="sid" name="Side"/>
+            <FE fgColor="FFFFFF" bgColor="A52A2A" type="Peripheral" abbrev="pos" name="Position"/>
+            <FE fgColor="FFFFFF" bgColor="FF00FF" type="Peripheral" abbrev="freq" name="Frequency"/>
+            <FE fgColor="FFFFFF" bgColor="800080" type="Peripheral" abbrev="tim" name="Time"/>
+            <FE fgColor="FFFFFF" bgColor="FFA500" type="Peripheral" abbrev="pla" name="Place"/>
+            <FE fgColor="FFFFFF" bgColor="00BFFF" type="Peripheral" abbrev="sup" name="Support_rate"/>
+        </frame>
+    </header>
+    <definition>FN: a vote that someone may exercise to resolve a deadlock.</definition>
+    <lexeme POS="N" name="deciding vote"/>
+	<subCorpus name="Manually-ADDED-by-IDIR-TEAM"> 
+		<sentence corpID="500" docID="1" sentNo="1" paragNo="1768" aPos="0" ID="800001344">
+			<text>I cast the deciding vote extending Medicaid health care coverage to 50,000 of our fellow citizens ,</text>
+			<annotationSet cDate="07/22/2019 04:00:00 CDT Mon" status="UNANN" ID="700009568">
+				<layer rank="1" name="PENN">
+					<label end="0" start="0" name="PRP"/>
+					<label end="5" start="2" name="VBD"/>
+					<label end="9" start="7" name="DT"/>
+					<label end="18" start="11" name="VBG"/>
+					<label end="23" start="20" name="NN"/>
+					<label end="33" start="25" name="VBG"/>
+					<label end="42" start="35" name="NNP"/>
+					<label end="49" start="44" name="NN"/>
+					<label end="54" start="51" name="NN"/>
+					<label end="63" start="56" name="NN"/>
+					<label end="66" start="65" name="TO"/>
+					<label end="73" start="68" name="CD"/>
+					<label end="76" start="75" name="IN"/>
+					<label end="80" start="78" name="PRP$"/>
+					<label end="87" start="82" name="JJ"/>
+					<label end="96" start="89" name="NNS"/>
+					<label end="98" start="98" name=","/>
+				</layer>
+				<layer rank="1" name="NER"/>
+				<layer rank="1" name="WSL"/>
+			</annotationSet>
+			<annotationSet cDate="09/30/2019 09:00:00 PDT Mon" status="MANUAL" ID="700009569"> 
+				<layer rank="1" name="Target"> 
+					<label cBy="IDIR-Team" end="18" start="11" name="Target"/> 
+					<label cBy="IDIR-Team" end="23" start="20" name="Target"/> 
+				</layer>
+				<layer rank="1" name="FE"><label end="0" start="0" name="Agent"/><label end="0" start="0" name="Agent"/><label end="96" start="25" name="Issue"/><label end="96" start="25" name="Issue"/></layer> 
+				<layer rank="1" name="GF"/> 
+				<layer rank="1" name="PT"/> 
+				<layer rank="1" name="Other"/> 
+				<layer rank="1" name="Sent"/> 
+				<layer rank="1" name="Adj"/> 
+			</annotationSet>
+		</sentence>
+		<sentence corpID="500" docID="1" sentNo="1" paragNo="11169" aPos="0" ID="800004058">
+			<text>Virginia Lt. Gov . Ralph Northam was the deciding vote in favor of sanctuary cities that let dangerous illegal immigrants back on the streets .</text>
+			<annotationSet cDate="07/22/2019 04:00:00 CDT Mon" status="UNANN" ID="700009570">
+				<layer rank="1" name="PENN">
+					<label end="7" start="0" name="NNP"/>
+					<label end="11" start="9" name="NNP"/>
+					<label end="15" start="13" name="NNP"/>
+					<label end="17" start="17" name="."/>
+					<label end="23" start="19" name="NNP"/>
+					<label end="31" start="25" name="NNP"/>
+					<label end="35" start="33" name="VBD"/>
+					<label end="39" start="37" name="DT"/>
+					<label end="48" start="41" name="JJ"/>
+					<label end="53" start="50" name="NN"/>
+					<label end="56" start="55" name="IN"/>
+					<label end="62" start="58" name="NN"/>
+					<label end="65" start="64" name="IN"/>
+					<label end="75" start="67" name="JJ"/>
+					<label end="82" start="77" name="NNS"/>
+					<label end="87" start="84" name="WDT"/>
+					<label end="91" start="89" name="VBP"/>
+					<label end="101" start="93" name="JJ"/>
+					<label end="109" start="103" name="JJ"/>
+					<label end="120" start="111" name="NNS"/>
+					<label end="125" start="122" name="RB"/>
+					<label end="128" start="127" name="IN"/>
+					<label end="132" start="130" name="DT"/>
+					<label end="140" start="134" name="NNS"/>
+					<label end="142" start="142" name="."/>
+				</layer>
+				<layer rank="1" name="NER"/>
+				<layer rank="1" name="WSL"/>
+			</annotationSet>
+			<annotationSet cDate="09/30/2019 09:00:00 PDT Mon" status="MANUAL" ID="700009571"> 
+				<layer rank="1" name="Target"> 
+					<label cBy="IDIR-Team" end="48" start="41" name="Target"/> 
+					<label cBy="IDIR-Team" end="53" start="50" name="Target"/> 
+				</layer>
+				<layer rank="1" name="FE"><label end="31" start="0" name="Agent"/><label end="31" start="0" name="Agent"/><label end="140" start="67" name="Issue"/><label end="140" start="67" name="Issue"/><label end="65" start="55" name="Position"/><label end="65" start="55" name="Position"/></layer> 
+				<layer rank="1" name="GF"/> 
+				<layer rank="1" name="PT"/> 
+				<layer rank="1" name="Other"/> 
+				<layer rank="1" name="Sent"/> 
+				<layer rank="1" name="Adj"/> 
+			</annotationSet>
+		</sentence>
+		<sentence corpID="500" docID="1" sentNo="1" paragNo="11643" aPos="0" ID="800004223">
+			<text>Ralph Northam cast the deciding vote in favor of sanctuary cities that let illegal immigrants who commit crimes back on the street .</text>
+			<annotationSet cDate="07/22/2019 04:00:00 CDT Mon" status="UNANN" ID="700009572">
+				<layer rank="1" name="PENN">
+					<label end="4" start="0" name="NNP"/>
+					<label end="12" start="6" name="NNP"/>
+					<label end="17" start="14" name="VBD"/>
+					<label end="21" start="19" name="DT"/>
+					<label end="30" start="23" name="VBG"/>
+					<label end="35" start="32" name="NN"/>
+					<label end="38" start="37" name="IN"/>
+					<label end="44" start="40" name="NN"/>
+					<label end="47" start="46" name="IN"/>
+					<label end="57" start="49" name="JJ"/>
+					<label end="64" start="59" name="NNS"/>
+					<label end="69" start="66" name="WDT"/>
+					<label end="73" start="71" name="VBP"/>
+					<label end="81" start="75" name="JJ"/>
+					<label end="92" start="83" name="NNS"/>
+					<label end="96" start="94" name="WP"/>
+					<label end="103" start="98" name="VBP"/>
+					<label end="110" start="105" name="NNS"/>
+					<label end="115" start="112" name="RB"/>
+					<label end="118" start="117" name="IN"/>
+					<label end="122" start="120" name="DT"/>
+					<label end="129" start="124" name="NN"/>
+					<label end="131" start="131" name="."/>
+				</layer>
+				<layer rank="1" name="NER"/>
+				<layer rank="1" name="WSL"/>
+			</annotationSet>
+			<annotationSet cDate="09/30/2019 09:00:00 PDT Mon" status="MANUAL" ID="700009573"> 
+				<layer rank="1" name="Target"> 
+					<label cBy="IDIR-Team" end="30" start="23" name="Target"/> 
+					<label cBy="IDIR-Team" end="35" start="32" name="Target"/> 
+				</layer>
+				<layer rank="1" name="FE"><label end="12" start="0" name="Agent"/><label end="12" start="0" name="Agent"/><label end="129" start="49" name="Issue"/><label end="129" start="49" name="Issue"/><label end="47" start="37" name="Position"/><label end="47" start="37" name="Position"/></layer> 
+				<layer rank="1" name="GF"/> 
+				<layer rank="1" name="PT"/> 
+				<layer rank="1" name="Other"/> 
+				<layer rank="1" name="Sent"/> 
+				<layer rank="1" name="Adj"/> 
+			</annotationSet>
+		</sentence>
+		<sentence corpID="500" docID="1" sentNo="1" paragNo="13619" aPos="0" ID="800004646">
+			<text>In Congress , @ RonDeSantisFL was the DECIDING vote AGAINST our state 's right to protect Florida waters from drilling .</text>
+			<annotationSet cDate="07/22/2019 04:00:00 CDT Mon" status="UNANN" ID="700009574">
+				<layer rank="1" name="PENN">
+					<label end="1" start="0" name="IN"/>
+					<label end="10" start="3" name="NNP"/>
+					<label end="12" start="12" name=","/>
+					<label end="14" start="14" name="NNP"/>
+					<label end="28" start="16" name="NNP"/>
+					<label end="32" start="30" name="VBD"/>
+					<label end="36" start="34" name="DT"/>
+					<label end="45" start="38" name="NNP"/>
+					<label end="50" start="47" name="NN"/>
+					<label end="58" start="52" name="NNP"/>
+					<label end="62" start="60" name="PRP$"/>
+					<label end="68" start="64" name="NN"/>
+					<label end="71" start="70" name="POS"/>
+					<label end="77" start="73" name="NN"/>
+					<label end="80" start="79" name="TO"/>
+					<label end="88" start="82" name="VB"/>
+					<label end="96" start="90" name="NNP"/>
+					<label end="103" start="98" name="NNS"/>
+					<label end="108" start="105" name="IN"/>
+					<label end="117" start="110" name="NN"/>
+					<label end="119" start="119" name="."/>
+				</layer>
+				<layer rank="1" name="NER"/>
+				<layer rank="1" name="WSL"/>
+			</annotationSet>
+			<annotationSet cDate="09/30/2019 09:00:00 PDT Mon" status="MANUAL" ID="700009575"> 
+				<layer rank="1" name="Target"> 
+					<label cBy="IDIR-Team" end="45" start="38" name="Target"/> 
+					<label cBy="IDIR-Team" end="50" start="47" name="Target"/> 
+				</layer>
+				<layer rank="1" name="FE"><label end="28" start="14" name="Agent"/><label end="28" start="14" name="Agent"/><label end="58" start="52" name="Position"/><label end="58" start="52" name="Position"/><label end="117" start="60" name="Issue"/><label end="117" start="60" name="Issue"/><label end="10" start="0" name="Place"/><label end="10" start="0" name="Place"/></layer> 
+				<layer rank="1" name="GF"/> 
+				<layer rank="1" name="PT"/> 
+				<layer rank="1" name="Other"/> 
+				<layer rank="1" name="Sent"/> 
+				<layer rank="1" name="Adj"/> 
+			</annotationSet>
+		</sentence>
+		<sentence corpID="500" docID="1" sentNo="1" paragNo="16486" aPos="0" ID="800005326">
+			<text>Heidi Heitkamp cast the deciding vote to kill the Congressional Review Act that would have repealed a BLM flaring rule that was designed just for North Dakota .</text>
+			<annotationSet cDate="07/22/2019 04:00:00 CDT Mon" status="UNANN" ID="700009576">
+				<layer rank="1" name="PENN">
+					<label end="4" start="0" name="NNP"/>
+					<label end="13" start="6" name="NNP"/>
+					<label end="18" start="15" name="VBD"/>
+					<label end="22" start="20" name="DT"/>
+					<label end="31" start="24" name="VBG"/>
+					<label end="36" start="33" name="NN"/>
+					<label end="39" start="38" name="TO"/>
+					<label end="44" start="41" name="VB"/>
+					<label end="48" start="46" name="DT"/>
+					<label end="62" start="50" name="NNP"/>
+					<label end="69" start="64" name="NNP"/>
+					<label end="73" start="71" name="NNP"/>
+					<label end="78" start="75" name="WDT"/>
+					<label end="84" start="80" name="MD"/>
+					<label end="89" start="86" name="VB"/>
+					<label end="98" start="91" name="VBN"/>
+					<label end="100" start="100" name="DT"/>
+					<label end="104" start="102" name="NNP"/>
+					<label end="112" start="106" name="NN"/>
+					<label end="117" start="114" name="NN"/>
+					<label end="122" start="119" name="WDT"/>
+					<label end="126" start="124" name="VBD"/>
+					<label end="135" start="128" name="VBN"/>
+					<label end="140" start="137" name="RB"/>
+					<label end="144" start="142" name="IN"/>
+					<label end="150" start="146" name="NNP"/>
+					<label end="157" start="152" name="NNP"/>
+					<label end="159" start="159" name="."/>
+				</layer>
+				<layer rank="1" name="NER"/>
+				<layer rank="1" name="WSL"/>
+			</annotationSet>
+			<annotationSet cDate="09/30/2019 09:00:00 PDT Mon" status="MANUAL" ID="700009577"> 
+				<layer rank="1" name="Target"> 
+					<label cBy="IDIR-Team" end="31" start="24" name="Target"/> 
+					<label cBy="IDIR-Team" end="36" start="33" name="Target"/> 
+				</layer>
+				<layer rank="1" name="FE"><label end="13" start="0" name="Agent"/><label end="13" start="0" name="Agent"/><label end="157" start="38" name="Issue"/><label end="157" start="38" name="Issue"/></layer> 
+				<layer rank="1" name="GF"/> 
+				<layer rank="1" name="PT"/> 
+				<layer rank="1" name="Other"/> 
+				<layer rank="1" name="Sent"/> 
+				<layer rank="1" name="Adj"/> 
+			</annotationSet>
+		</sentence>
+	</subCorpus>
+</lexUnit>

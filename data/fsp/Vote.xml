@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="frame.xsl"?>
+<frame cBy="IDIR" cDate="06/21/2018 11:00:00 CDT Thu" name="Vote" ID="9000" xsi:schemaLocation="../schema/frame.xsd" xmlns="http://framenet.icsi.berkeley.edu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+	<definition>&lt;def-root&gt; An &lt;fex name="Agent"&gt;Agent&lt;/fex &gt; makes a voting decision on an &lt;fex name="Issue"&gt;Issue&lt;/fex &gt;. 
+				&lt;fex name="Issue"&gt;Issues&lt;/fex &gt; can be bills, resolutions, nominations, and treaties, and others on procedural matters. 
+				A ​&lt;fex name="Frequency"&gt;Frequency&lt;/fex &gt; of the voting decision may be stated.
+				&lt;ex&gt;&lt;fex name="Agent"&gt;Mitch McConnell&lt;/fex&gt; &lt;t&gt;voted&lt;/t&gt; &lt;fex name="Frequency"&gt;three times&lt;/fex&gt; &lt;fex name="Position"&gt;for&lt;/fex&gt; &lt;fex name="Issue"&gt;corporate tax breaks that send Kentucky jobs overseas&lt;/fex&gt;.&lt;/ex&gt;
+				&lt;ex&gt;&lt;fex name="Agent"&gt;Tom Cotton&lt;/fex&gt; &lt;t&gt;voted&lt;/t&gt; &lt;fex name="Position"&gt;against&lt;/fex&gt; &lt;fex name="Issue"&gt;preparing America for pandemics like Ebola&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    <FE bgColor="FF0000" fgColor="FFFFFF" coreType="Core" cBy="IDIR" cDate="06/21/2018 11:00:00 CDT Thu" abbrev="age" name="Agent" ID="50000">
+        <definition>&lt;def-root&gt; The conscious entity, generally a person, that performs the voting decision on an &lt;fex name="Issue"&gt;Issue&lt;/fex&gt;. 
+        			&lt;ex&gt;&lt;fex name="Agent"&gt;Sen. Mark Begich&lt;/fex&gt; cast the &lt;t&gt;deciding&lt;/t&gt; &lt;t&gt;vote&lt;/t&gt; in favor of President Obama's authority to issue executive amnesty to illegal aliens.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="008000" fgColor="FFFFFF" coreType="Core" cBy="IDIR" cDate="06/21/2018 11:00:00 CDT Thu" abbrev="iss" name="Issue" ID="50001">
+        <definition>&lt;def-root&gt; The matter which the &lt;fex name="Agent"&gt;Agent&lt;/fex&gt; has a positive or negative opinion about and either votes for or votes against. 
+        			&lt;ex&gt;Bernie Sanders &lt;t&gt;voted&lt;/t&gt; against &lt;fex name="Issue"&gt;the Brady Bill -- background checks and waiting periods&lt;/fex&gt;.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="0000FF" fgColor="FFFFFF" coreType="Peripheral" cBy="IDIR" cDate="06/21/2018 11:00:00 CDT Thu" abbrev="sid" name="Side" ID="50002">
+        <definition>&lt;def-root&gt; The conscious entity, generally a person, that performs the voting decision on an &lt;fex name="Issue"&gt;Issue&lt;/fex&gt; together with the &lt;fex name="Agent"&gt;Agent&lt;/fex&gt;. 
+        			&lt;ex&gt;Bernie Sanders &lt;t&gt;voted&lt;/t&gt; &lt;fex name="Side"&gt;with Republicans&lt;/fex&gt; to protect the Minutemen , a hate group that used military tactics against our community .&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="A52A2A" fgColor="FFFFFF" coreType="Peripheral" cBy="IDIR" cDate="06/21/2018 11:00:00 CDT Thu" abbrev="pos" name="Position" ID="50003">
+        <definition>&lt;def-root&gt; This FE identifies the position that the &lt;fex name="Agent"&gt;Agent&lt;/fex&gt; takes on an &lt;fex name="Issue"&gt;Issue&lt;/fex&gt;. The &lt;fex name="Agent"&gt;Agent&lt;/fex&gt; either votes for or against. 
+        			&lt;ex&gt;He &lt;t&gt;voted&lt;/t&gt; &lt;fex name="Position"&gt;for&lt;/fex&gt; disaster relief and full funding of FEMA.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="FF00FF" fgColor="FFFFFF" coreType="Peripheral" cBy="IDIR" cDate="06/21/2018 11:00:00 CDT Thu" abbrev="freq" name="Frequency" ID="50004">
+        <definition>&lt;def-root&gt; The number of times that the &lt;fex name="Agent"&gt;Agent&lt;/fex&gt; made the same voting decision on an &lt;fex name="Issue"&gt;Issue&lt;/fex&gt;. 
+        			&lt;ex&gt;Mitch McConnell &lt;t&gt;voted&lt;/t&gt; &lt;fex name="Frequency"&gt;two times&lt;/fex&gt; against "the Violence Against Women Act". &lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="800080" fgColor="FFFFFF" coreType="Peripheral" cBy="IDIR" cDate="06/21/2018 11:00:00 CDT Thu" abbrev="tim" name="Time" ID="50005">
+        <definition>&lt;def-root&gt; This FE identifies the time when the &lt;fex name="Agent"&gt;Agent&lt;/fex&gt; performs the voting decision. 
+        			&lt;ex&gt;&lt;fex name="Time"&gt;This week&lt;/fex&gt; the House of Representatives &lt;t&gt;voted&lt;/t&gt; to remove the word ‘lunatic' from federal law.&lt;/ex&gt;&lt;/def-root&gt;</definition>
+    </FE>
+    <FE  bgColor="FFA500" fgColor="FFFFFF" coreType="Peripheral" cBy="IDIR" cDate="09/22/2019 09:00:00 PDT Mon" abbrev="pla" name="Place" ID="50006">
+        <definition>&lt;def-root&gt;The location where the voting decision took place.  
+        &lt;ex&gt; &lt;fex name="Place"&gt;In the Senate&lt;/fex&gt; , Mike DeWine &lt;t&gt;voted&lt;/t&gt; with Hillary Clinton to let illegal immigrants receive Social Security . &lt;/ex&gt; &lt;/def-root&gt;</definition>
+    </FE>
+    <FE bgColor="00BFFF" fgColor="FFFFFF" coreType="Peripheral" cBy="IDIR" cDate="09/22/2019 09:00:00 PDT Mon" abbrev="sup" name="Support_rate" ID="50007">
+        <definition>&lt;def-root&gt; The percentage of Agent's total votes, in which the Agent took the same position with a Side for a specific period of time. 
+        &lt;ex&gt;Congressman Joe Heck has &lt;t&gt;voted&lt;/t&gt; &lt;fex name="Support_rate"&gt;62 percent of the time&lt;/fex&gt; with Nancy Pelosi and the Democrats on a variety of important issues . &lt;/ex&gt; &lt;/def-root&gt;</definition>
+    </FE>
+    <frameRelation type="Inherits from"/>
+    <frameRelation type="Is Inherited by"/>
+    <frameRelation type="Perspective on"/>
+    <frameRelation type="Is Perspectivized in"/>
+    <frameRelation type="Uses"/>
+    <frameRelation type="Is Used by"/>
+    <frameRelation type="Subframe of"/>
+    <frameRelation type="Has Subframe(s)"/>
+    <frameRelation type="Precedes"/>
+    <frameRelation type="Is Preceded by"/>
+    <frameRelation type="Is Inchoative of"/>
+    <frameRelation type="Is Causative of"/>
+    <frameRelation type="See also"/>
+    <lexUnit status="Finished_Initial" POS="V" name="vote.v" ID="90000" lemmaID="90000" cBy="IDIR" cDate="09/01/2019 13:00:00 CDT Thu">
+        <definition>FN: to express or signify (one's preference, opinion, or will) (for or against some matter, etc).</definition>
+        <sentenceCount annotated="105" total="105"/>
+        <lexeme order="1" headword="false" breakBefore="false" POS="V" name="vote"/>
+    </lexUnit>
+        <lexUnit status="Finished_Initial" POS="N" name="(a/the) deciding vote.n" ID="90001" lemmaID="90001" cBy="IDIR" cDate="06/21/2019 15:00:00 CDT Thu">
+        <definition>FN: a vote that someone may exercise to resolve a deadlock.</definition>
+        <sentenceCount annotated="5" total="5"/>
+        <lexeme order="1" headword="true" breakBefore="false" POS="V" name="deciding"/>
+        <lexeme order="2" headword="false" breakBefore="true" POS="N" name="vote"/>
+    </lexUnit>
+</frame>
