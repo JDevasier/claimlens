@@ -1,4 +1,5 @@
 from openai import OpenAI
+import logging
 import os
 
 def load_environment_variables():
@@ -17,3 +18,7 @@ def load_environment_variables():
 def setup_openai_client(api_config):
     """Initialize the OpenAI client."""
     return OpenAI(organization=api_config["org_id"], project=api_config["proj_id"])
+
+def setup_logging():
+    """Set up logging."""
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")

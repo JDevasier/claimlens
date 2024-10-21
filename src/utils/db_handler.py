@@ -1,4 +1,5 @@
 import sqlite3
+import logging
 
 def generate_query(fes: dict, bill: int, agent: str) -> str:
     """
@@ -34,7 +35,7 @@ def generate_query(fes: dict, bill: int, agent: str) -> str:
         """
     return query
 
-def query_database(query: str, db: sqlite3.Connection, params: tuple = ()):
+def query_database(db: sqlite3.Connection, query: str, params: tuple = ()):
     """
     Execute a query against the database and return the results.
     
@@ -46,13 +47,11 @@ def query_database(query: str, db: sqlite3.Connection, params: tuple = ()):
     Returns:
     - list: Query result rows.
     """
-    try:
-        with db.cursor() as cur:
-            cur.execute(query, params)
-            return cur.fetchall()
-    except sqlite3.Error as e:
-        print(f"An error occurred while executing query: {e}")
-        return []
+    cur = db.cursor()  # No 'with' statement here
+    cur.execute(query, params)
+    result = cur.fetchall()
+    return result
+
 
 def connect_to_db(db_file: str) -> sqlite3.Connection:
     """
@@ -65,6 +64,7 @@ def connect_to_db(db_file: str) -> sqlite3.Connection:
     - sqlite3.Connection: Active database connection.
     """
     try:
+        logging.info(f"Connecting to database: {db_file}")
         return sqlite3.connect(db_file)
     except sqlite3.Error as e:
         print(f"Failed to connect to database: {e}")
@@ -82,7 +82,7 @@ def load_congressmembers(db: sqlite3.Connection) -> dict:
     """
     congressmembers = {}
     query = "SELECT bioguideid, name FROM members;"
-    results = query_database(query, db)
+    results = query_database(db, query)
 
     for bioguideid, name in results:
         congressmembers[name] = bioguideid
