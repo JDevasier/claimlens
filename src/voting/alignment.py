@@ -1,7 +1,7 @@
 from concurrent.futures import ThreadPoolExecutor
 from dotenv import load_dotenv
 from typing import Tuple
-import openai
+from openai import OpenAI
 import json
 import os
 
@@ -27,12 +27,11 @@ def query_gpt(summary: str, vote_type: str, claim: str) -> Tuple[str, str]:
     api_key = os.getenv("OPENAI_API_KEY")
     org_id = os.getenv("OPENAI_ORG")
 
-    openai.api_key = api_key  # Set API key for authentication
-    openai.organization = org_id
+    client = OpenAI(api_key=api_key, organization=org_id)
 
     try:
         # Make API request to OpenAI's GPT model
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-4o",  # Adjust model as needed
             messages=[
                 {"role": "system", "content": "Follow the user input exactly."},
@@ -40,9 +39,13 @@ def query_gpt(summary: str, vote_type: str, claim: str) -> Tuple[str, str]:
                     summary=summary, vote_type=vote_type, claim=claim)}
             ]
         )
-        
+        # print(response.choices[0].message)
+        print(response.choices[0].message.content)
         # Parse response content
-        response_json = json.loads(response.choices[0].message['content'])
+        response_content = response.choices[0].message.content
+        if response_content.startswith("```json"):
+            response_content = response_content[7:-3]
+        response_json = json.loads(response_content)
     except Exception as e:
         print(f"Error: {e}")
         return "Error", "An error occurred while verifying the claim."

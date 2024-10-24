@@ -141,7 +141,7 @@ class FrameParser:
     def __init__(self, args):
         logging.info("Initializing FrameParser")
         self.device = args.device
-        self.model = UnifiedFrameSemanticParser(config=RobertaConfig.from_pretrained("roberta-base"))
+        self.model = UnifiedFrameSemanticParser(config=RobertaConfig.from_pretrained("roberta-base")).to(self.device)
         if args.fsp_model:
             self.model.load_state_dict(torch.load(args.fsp_model, map_location=self.device))
         self.model.eval()
