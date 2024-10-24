@@ -19,4 +19,6 @@
 
 Congress DB: https://drive.google.com/file/d/1USmzLbW1b04JLTQzq9usL7JHcBMrcPZY/view?usp=sharing
 
+vote-fsp model: https://drive.google.com/file/d/1QiL8uemfmML7iYu9WMiqMcz_hAUzYRjQ/view?usp=sharing
+
 Voting records scraping: https://github.com/unitedstates/congress 
